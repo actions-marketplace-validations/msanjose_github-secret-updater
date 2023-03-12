@@ -1,0 +1,16 @@
+name: 'GitHub Secret Updater'
+description: 'Create or update a secret in a GitHub repo'
+inputs:
+  owner:
+    description: 'Repository owner'
+    required: true
+  secret-id:
+    description: 'Name of secret to create/update'
+    required: true
+  secret-value:
+    description: 'Value of secret'
+    required: true
+outputs: {}
+runs:
+  using: 'node16'
+  main: 'index.js'

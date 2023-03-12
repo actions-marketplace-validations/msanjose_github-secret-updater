@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@octokit/action": "^5.0.2",
+    "libsodium-wrappers": "^0.7.11"
+  },
+  "name": "github-secret-updater",
+  "description": "Update repository secrets from a GitHub Action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
