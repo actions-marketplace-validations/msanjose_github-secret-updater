@@ -4,6 +4,9 @@ inputs:
   owner:
     description: 'Repository owner'
     required: true
+  repo:
+    description: 'Repository name'
+    required: true
   secret-id:
     description: 'Name of secret to create/update'
     required: true
