@@ -1,0 +1,15 @@
+name: GitHub Secret Updater Example
+run-name: ${{ github.actor }} is testing github-secret-updater
+on: [push, workflow_dispatch]
+jobs:
+  Update-Secret:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: msanjose/github-secret-updater@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          owner: 'msanjose'
+          repo: 'github-secret-updater'
+          secret-id: 'MY_SECRET'
+          secret-value: 'Hello World'
