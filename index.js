@@ -26,7 +26,7 @@ async function run() {
     const encId = pk.data.key_id
 
     // encrypt secret value
-    await sodium.ready();
+    await sodium.ready;
     // Convert Secret & Base64 key to Uint8Array.
     let binkey = sodium.from_base64(encKey, sodium.base64_variants.ORIGINAL)
     let binsec = sodium.from_string(secretValue)
