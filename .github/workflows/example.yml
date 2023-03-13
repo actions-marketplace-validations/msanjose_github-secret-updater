@@ -5,7 +5,7 @@ jobs:
   Update-Secret:
     runs-on: ubuntu-latest
     steps:
-      - uses: msanjose/github-secret-updater@main
+      - uses: msanjose/github-secret-updater@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GH_API_TOKEN }}
         with:
